@@ -21,7 +21,7 @@
                 <div class="flex gap-7 items-center px-5">
                     <div class="flex gap-4 items-center p-2 bg-gray-100 rounded-2xl">
                         <img class="w-3 h-3" src="assets/checkbox.png" alt="">
-                        <h1 class="font-bold text-sm">23</h1>
+                        <h1 id="completed-task" class="font-bold text-sm">23</h1>
                     </div>
                     <img class="w-5 h-5" src="assets/theme-btn.png" alt="">
                 </div>
@@ -29,17 +29,16 @@
     </header>
     <main class="max-w-5xl mx-auto">
         <section class="grid grid-cols-4 gap-4 ">
-            <div class="col-span-3 gap-5">
+            <div class="col-span-3 gap-5 rounded-lg">
                 <div class="grid grid-cols-4 gap-3 p-3 bg-white">
                     <div class="flex items-center justify-between p-7 bg-slate-100 rounded-lg">
                         <img class="w-8 h-8 p-2 rounded-full bg-white" src="assets/checkbox.png" alt="">
                         <div class="">
                             <h3 class="text-xs">Task Assigned </h3>
-                            <h1 class="text-sm font-bold">05</h1>
+                            <h1 id="pending-task" class="text-sm font-bold">6</h1>
                         </div>
                     </div>
-                    <div
-                        class="col-span-2 flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] px-7 gap-5 rounded-lg">
+                    <div id="discover-box" class="col-span-2 flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] px-7 gap-5 rounded-lg">
                         <img src="assets/board.png" alt="">
                         <p class="text-white">
                             Discover Something <br> New Today!
@@ -59,7 +58,7 @@
                     <div class="bg-slate-100 p-4 space-y-4 rounded-lg">
                         <span class="p-1 rounded-lg font-light text-xs bg-white ">ShopEase</span>
                         <br>
-                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <h1 id="card-name-1" class="font-bold">Fix Mobile Button Issue </h1>
                         <p class="text-xs bg-white p-2 font-extralight rounded-lg">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a
                             smooth transition effect.
@@ -69,14 +68,14 @@
                                 <h3 class="text-xs font-light">Deadline</h3>
                                 <h2 class="text-sm font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
+                            <button id="card-1-btn" class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
                         </div>
                     </div>
                     <!-- card 2 -->
                     <div class="bg-slate-100 p-4 space-y-4 rounded-lg">
                         <span class="p-1 rounded-lg font-light text-xs bg-white ">ShopEase</span>
                         <br>
-                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <h1 id="card-name-2" class="font-bold">Add Dark Mode</h1>
                         <p class="text-xs bg-white p-2 font-extralight rounded-lg">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a
                             smooth transition effect.
@@ -86,14 +85,14 @@
                                 <h3 class="text-xs font-light">Deadline</h3>
                                 <h2 class="text-sm font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
+                            <button id="card-2-btn" class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
                         </div>
                     </div>
                     <!-- card 3 -->
                     <div class="bg-slate-100 p-4 space-y-4 rounded-lg">
                         <span class="p-1 rounded-lg font-light text-xs bg-white ">ShopEase</span>
                         <br>
-                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <h1 id="card-name-3" class="font-bold">Optimize  Home page </h1>
                         <p class="text-xs bg-white p-2 font-extralight rounded-lg">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a
                             smooth transition effect.
@@ -103,14 +102,14 @@
                                 <h3 class="text-xs font-light">Deadline</h3>
                                 <h2 class="text-sm font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
+                            <button id="card-3-btn" class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
                         </div>
                     </div>
                     <!-- card 4 -->
                     <div class="bg-slate-100 p-4 space-y-4 rounded-lg">
                         <span class="p-1 rounded-lg font-light text-xs bg-white ">ShopEase</span>
                         <br>
-                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <h1 id="card-name-4" class="font-bold">Add new emoji 🤲</h1>
                         <p class="text-xs bg-white p-2 font-extralight rounded-lg">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a
                             smooth transition effect.
@@ -120,14 +119,14 @@
                                 <h3 class="text-xs font-light">Deadline</h3>
                                 <h2 class="text-sm font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
+                            <button id="card-4-btn" class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
                         </div>
                     </div>
                     <!-- card 5 -->
                     <div class="bg-slate-100 p-4 space-y-4 rounded-lg">
                         <span class="p-1 rounded-lg font-light text-xs bg-white ">ShopEase</span>
                         <br>
-                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <h1 id="card-name-5" class="font-bold">Integrate OpenAI API </h1>
                         <p class="text-xs bg-white p-2 font-extralight rounded-lg">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a
                             smooth transition effect.
@@ -137,14 +136,14 @@
                                 <h3 class="text-xs font-light">Deadline</h3>
                                 <h2 class="text-sm font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
+                            <button id="card-5-btn" class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
                         </div>
                     </div>
                     <!-- card 6 -->
                     <div class="bg-slate-100 p-4 space-y-4 rounded-lg">
                         <span class="p-1 rounded-lg font-light text-xs bg-white ">ShopEase</span>
                         <br>
-                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <h1 id="card-name-6" class="font-bold">Improve Job searching </h1>
                         <p class="text-xs bg-white p-2 font-extralight rounded-lg">
                             Store the user's preference in localStorage, update CSS variables dynamically, and apply a
                             smooth transition effect.
@@ -154,21 +153,28 @@
                                 <h3 class="text-xs font-light">Deadline</h3>
                                 <h2 class="text-sm font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
+                            <button id="card-6-btn" class="btn bg-[#3752FD] py-0.5 text-white text-xs">Completed</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- activity log -->
-            <div class="bg-white">
-                <div class="flex gap-3">
-                    <img src="assets/activity.png" alt="">
-                    <h1>Activity Log</h1>
+            <div class="bg-white rounded-lg  mb-7 p-4">
+                <div class="flex gap-3 justify-center my-3 items-center">
+                    <img class="w-4 h-4" src="assets/activity.png" alt="">
+                    <h1 class="font-bold">Activity Log</h1>
                 </div>
-                <button>Clear History</button>
+
+                <button class="btn ml-14 bg-[#3752FD] text-white text-xs mb-5">Clear History</button>
+                <div id="history-container" class="space-y-2">
+
+                </div>
+
             </div>
         </section>
     </main>
+    <script src="jsFile/utilitice.js"></script>
+    <script src="jsFile/main.js"></script>
 </body>
 
 </html>
