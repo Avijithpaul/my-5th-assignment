@@ -4,11 +4,13 @@ function getInnerNumber(id) {
     return intoNumber
 }
 
+
 // completed btn function 
-function clickCompletedBtn(id,cardName) {
+function clickCompletedBtn(id, cardName) {
     document.getElementById(id).addEventListener("click", function () {
-        alert('you done it')
-        document.getElementById(id).style.opacity = '51%'
+        alert("Board updated Successfully")
+
+        document.getElementById(id).disabled = true
 
         const pendingTask = getInnerNumber("pending-task")
         const convertedPendingTask = pendingTask - 1
@@ -31,7 +33,6 @@ function clickCompletedBtn(id,cardName) {
             You have Complete The Task ${cardNam} at ${timeNow}
         `
         document.getElementById("history-container").appendChild(p)
-
-        
     })
+    
 }
