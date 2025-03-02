@@ -35,8 +35,8 @@ function clickCompletedBtn(id, cardName) {
         `
         document.getElementById("history-container").appendChild(p)
 
-        
-        if(count===5){
+
+        if (count === 5) {
             alert('tik asce')
         }
         count++

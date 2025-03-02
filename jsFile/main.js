@@ -1,13 +1,22 @@
+
 document.getElementById("discover-box").addEventListener('click', function () {
     window.location.href = "question.html"
 })
 
-let today = new Date();
-let day = today.getDate();
-let month = today.getMonth() + 1;  
-let year = today.getFullYear();
-let dateString = `${day}.${month}.${year}`;
-document.getElementById("calender").innerText=dateString
+const date = new Date();
+
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const day = date.getDate().toString().padStart(2, '0');
+const month = monthsOfYear[date.getMonth()];
+const year = date.getFullYear();
+const weekday = daysOfWeek[date.getDay()];
+
+const formatDate = `${day} ${month}, ${year}`;
+
+document.getElementById("calender").innerText = formatDate
+document.getElementById("week").innerText = weekday
 
 clickCompletedBtn("card-1-btn", "card-name-1")
 clickCompletedBtn("card-2-btn", "card-name-2")
