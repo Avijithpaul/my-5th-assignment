@@ -4,6 +4,7 @@ function getInnerNumber(id) {
     return intoNumber
 }
 
+let count = 0
 
 // completed btn function 
 function clickCompletedBtn(id, cardName) {
@@ -33,6 +34,15 @@ function clickCompletedBtn(id, cardName) {
             You have Complete The Task ${cardNam} at ${timeNow}
         `
         document.getElementById("history-container").appendChild(p)
+
+        
+        if(count===5){
+            alert('tik asce')
+        }
+        count++
     })
-    
+}
+
+function lastAlert(idName) {
+    document.getElementById(idName).disabled === true
 }

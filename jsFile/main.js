@@ -6,7 +6,7 @@ let today = new Date();
 let day = today.getDate();
 let month = today.getMonth() + 1;  
 let year = today.getFullYear();
-let dateString = `${day}/${month}/${year}`;
+let dateString = `${day}.${month}.${year}`;
 document.getElementById("calender").innerText=dateString
 
 clickCompletedBtn("card-1-btn", "card-name-1")
