@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-slate-200">
     <header>
         <nav class="max-w-5xl mx-auto">
-            <div class="navbar bg-base-100 shadow-sm items-center">
+            <div class="navbar bg-base-100 shadow-sm items-center rounded-lg">
                 <div class="flex-1 flex items-center gap-2">
                     <img class="w-9" src="assets/logo.png" alt="">
                     <h1 class="font-normal">Dev<span class="font-bold">Board</span></h1>
@@ -19,6 +21,7 @@
                 <div class="flex items-center px-5">
                     <button id="back" class="btn bg-[#3752FD] font-bold text-sm text-white">Back to Desk</button>
                 </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -26,33 +29,42 @@
             <h1 class="text-center font-bold text-xl pb-3">Blogs</h1>
             <div class="space-y-5">
                 <div class="bg-stone-50 p-4 rounded-lg">
-                    <h1 class="pb-3 font-bold text-sm border-b-1">Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <h1 class="pb-3 font-bold text-sm border-b-1">Question-1: What are the different ways to select an
+                        element in the DOM?</h1>
                     <p class="pt-7 text-gray-500">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dolore nihil et, dolor dolorum expedita atque architecto possimus a voluptas placeat.
+                        Dom e element select korar jonno getElementById(), getElementsByClassName(),
+                        getElementsByTagName(), querySelector() ar querySelectorAll()
+                        use kora hoy.
                     </p>
                 </div>
                 <div class="bg-stone-50 p-4 rounded-lg">
-                    <h1 class="pb-3 font-bold text-sm border-b-1">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <h1 class="pb-3 font-bold text-sm border-b-1">Question-2: What is the difference between innerHTML,
+                        innerText, and textContent ?</h1>
                     <p class="pt-7 text-gray-500">
-                        innerHTML HTML tags soho content dekhay, innerText sudhu visible text dekhay, ar textContent shob text hidden o dekhay, HTML tags ke ignore kore.
+                        innerHTML HTML tags soho content dekhay, innerText sudhu visible text dekhay, ar textContent
+                        shob text hidden o dekhay, HTML tags ke ignore kore.
                     </p>
                 </div>
                 <div class="bg-stone-50 p-4 rounded-lg">
                     <h1 class="pb-3 font-bold text-sm border-b-1">Question-3: What is event delegation in the DOM?</h1>
                     <p class="pt-7 text-gray-500">
-                        Event delegation holo ekta technique, jekhane ekta parent element e single event listener add kora hoy, ar oi listener ta tar child elements er events handle kore. Ete performance improve hoy ar dynamically added elements er event management sohoj hoy.
+                        Event delegation holo ekta technique, jekhane ekta parent element e single event listener add
+                        kora hoy, ar oi listener ta tar child elements er events handle kore.
                     </p>
                 </div>
                 <div class="bg-stone-50 p-4 rounded-lg">
                     <h1 class="pb-3 font-bold text-sm border-b-1">Question-4: What is event bubbling in the DOM?</h1>
                     <p class="pt-7 text-gray-500">
-                        Event bubbling hocche, jokhon kono event child element e hoy, seta parent elements e "bubble up" kore. Ete parent elements child elements er events handle korte pare.
+                        Event bubbling hocche, jokhon kono event child element e hoy, seta parent elements e "bubble up"
+                        kore. Ete parent elements child elements er events handle korte pare.
                     </p>
                 </div>
                 <div class="bg-stone-50 p-4 rounded-lg">
-                    <h1 class="pb-3 font-bold text-sm border-b-1">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                    <h1 class="pb-3 font-bold text-sm border-b-1">Question-5: How do you create, add, and remove
+                        elements using JavaScript?</h1>
                     <p class="pt-7 text-gray-500">
-                        JavaScript e element create korar jonno document.createElement(), add korar jonno appendChild(), ar remove korar jonno removeChild() use kora hoy.
+                        JavaScript e element add korar jonno appendChild(),create korar jonno document.createElement(),
+                        ar remove korar jonno removeChild() use kora hoy.
                     </p>
                 </div>
             </div>
@@ -60,4 +72,5 @@
     </main>
     <script src="jsFile/question.js"></script>
 </body>
+
 </html>

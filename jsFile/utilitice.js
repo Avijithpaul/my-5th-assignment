@@ -37,7 +37,7 @@ function clickCompletedBtn(id, cardName) {
 
 
         if (count === 5) {
-            alert('tik asce')
+            alert("congratulations!!! You have completed all the current task")
         }
         count++
     })
